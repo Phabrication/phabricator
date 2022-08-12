@@ -121,6 +121,7 @@ final class AphrontMySQLiDatabaseConnection
     // this option MUST be set after "real_connect()" on all PHP versions.
     $conn->options(MYSQLI_OPT_LOCAL_INFILE, 0);
 
+    $result = @$conn->query('SET SESSION sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))');
     $this->connectionOpen = true;
 
     $ok = @$conn->set_charset('utf8mb4');
