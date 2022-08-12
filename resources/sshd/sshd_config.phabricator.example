@@ -3,9 +3,9 @@
 
 # NOTE: Edit these to the correct values for your setup.
 
-AuthorizedKeysCommand /usr/libexec/phabricator-ssh-hook.sh
-AuthorizedKeysCommandUser vcs-user
-AllowUsers vcs-user
+AuthorizedKeysCommand /usr/local/lib/php/phabricator/resources/sshd/phabricator-ssh-hook.sh
+AuthorizedKeysCommandUser git
+AllowUsers git
 
 # You may need to tweak these options, but mostly they just turn off everything
 # dangerous.
@@ -16,9 +16,9 @@ PermitRootLogin no
 AllowAgentForwarding no
 AllowTcpForwarding no
 PrintMotd no
-PrintLastLog no
+
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 AuthorizedKeysFile none
 
-PidFile /var/run/sshd-phabricator.pid
+

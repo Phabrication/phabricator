@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 $ssh_start_time = microtime(true);

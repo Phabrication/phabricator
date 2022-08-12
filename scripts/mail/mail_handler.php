@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 // NOTE: This script is very oldschool and takes the environment as an argument.

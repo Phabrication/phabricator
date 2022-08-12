@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 // This is a wrapper script for Git, Mercurial, and Subversion. It primarily

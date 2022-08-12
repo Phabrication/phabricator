@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 // NOTE: This script will sometimes emit a warning like this on startup:

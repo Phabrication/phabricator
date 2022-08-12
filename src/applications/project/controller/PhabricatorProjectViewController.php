@@ -39,7 +39,7 @@ final class PhabricatorProjectViewController
         $controller_object = new PhabricatorProjectManageController();
         break;
       default:
-        return $engine->buildResponse();
+        return $engine->buildResponse(true);
     }
 
     return $this->delegateToController($controller_object);

@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 $root = dirname(dirname(dirname(__FILE__)));

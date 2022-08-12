@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 // NOTE: This is substantially the same as the libphutil/ "launch_daemon.php"

@@ -11,7 +11,7 @@ final class PhabricatorStorageFixtureScopeGuard extends Phobject {
     $this->name = $name;
 
     execx(
-      'php %s upgrade --force --namespace %s',
+      '/usr/local/bin/php %s upgrade --force --namespace %s',
       $this->getStorageBinPath(),
       $this->name);
 
@@ -30,7 +30,7 @@ final class PhabricatorStorageFixtureScopeGuard extends Phobject {
     PhabricatorLiskDAO::closeAllConnections();
 
     execx(
-      'php %s destroy --force --namespace %s',
+      '/usr/local/bin/php %s destroy --force --namespace %s',
       $this->getStorageBinPath(),
       $this->name);
   }

@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # NOTE: Replace this with the username that you expect users to connect with.
-VCSUSER="vcs-user"
+VCSUSER="git"
 
 # NOTE: Replace this with the path to your Phabricator directory.
-ROOT="/path/to/phabricator"
+ROOT="/usr/local/lib/php/phabricator"
 
 if [ "$1" != "$VCSUSER" ];
 then

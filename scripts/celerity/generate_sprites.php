@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/local/bin/php
 <?php
 
 require_once dirname(dirname(__FILE__)).'/__init_script__.php';

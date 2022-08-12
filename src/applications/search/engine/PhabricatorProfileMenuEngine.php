@@ -99,7 +99,7 @@ abstract class PhabricatorProfileMenuEngine extends Phobject {
     return $this->editMode;
   }
 
-  public function buildResponse() {
+  public function buildResponse($ignore_item_id = false) {
     $controller = $this->getController();
 
     $viewer = $controller->getViewer();
@@ -128,6 +128,10 @@ abstract class PhabricatorProfileMenuEngine extends Phobject {
     // be populated while editing items.
     if (!$item_id) {
       $item_id = $request->getURIData('id');
+    }
+
+    if ($ignore_item_id) {
+      $item_id = "";
     }
 
     $view_list = $this->newProfileMenuItemViewList();
