@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 phabricator_startup();
 
 $fatal_exception = null;
