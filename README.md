@@ -17,7 +17,7 @@ Phabricator includes applications for:
 You can learn more about the project (and find links to documentation and resources) at [Phabricator.org](http://phabricator.org)
 
 Phabricator was developed and maintained by Facebook and then [Phacility](http://phacility.com).  This fork is
-not associated with Facebook or Phacility.
+not associated with Facebook or Phacility.  This is a downstream from the [Phacility Upstream](https://github.com/phacility/phabricator/).
 
 **LICENSE**
 
